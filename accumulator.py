@@ -15,4 +15,25 @@ def accumulator():
         count = count + 1
     print("The sum of the numbers is:", sum)
 
-accumulator()
+def accumulator_v2():
+    #Accumulator built as a class challenge
+    sum = 0
+    number = 1
+    while number != 0:
+        number = int(input("Enter a number. 0 ends the list: "))
+        sum = sum + number
+    print("The sum of the numbers is:", sum)
+
+def accumulator_v3():
+    #Same function as above, but built out a different way
+    sum = 0
+    number = 0
+    while True:
+        number = int(input("Enter a number. 0 ends the list: "))
+        if number == 0:
+            break
+        sum += number
+    print("The sum of the numbers is:", sum)
+
+
+accumulator_v3()
